@@ -21,6 +21,8 @@ network.add(layers.Dense(512, activation='relu', input_shape=(28 * 28,)))#케라
 따라서 두번쩨레이어의 10은 출력수를 의미
 dense layer는 출력층으로 자주사용됨 왜냐? 입력뉴런수랑 상관없이 출력 뉴런수를 정할수있으므로?
 '''
+network.add(layers.Dense(512, activation='relu'))
+network.add(layers.Dense(512, activation='relu'))
 network.add(layers.Dense(10, activation='softmax'))#활성화함수,
 # 활성화 함수란 어떠한 신호를 입력받아 이를 적절한 처리를 하여 출력해주는 함수
 #예제에서는 케라스에서 제공하는 relu, 소프트맥스함수를이용.
